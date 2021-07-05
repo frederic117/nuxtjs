@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+
+    <script
+      type="application/javascript"
+      src="https://sdki.truepush.com/sdk/v2.0.3/app.js"
+      async
+    ></script>
+    <script>
+      var truepush = window.truepush || [];
+
+      truepush.push(function() {
+        truepush.Init(
+          {
+            id: "5ebe3ac46fff9c2bf800603e",
+          },
+          function(error) {
+            if (error) console.error(error);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
